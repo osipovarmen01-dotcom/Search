@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      text-align: center;
+      width: 100%;
+      max-width: 700px;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 320px;
+      max-width: 90%;
+      margin-bottom: 35px;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: white;
+      border: 1px solid #dcdcdc;
+      border-radius: 50px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: 0.2s ease;
+    }
+
+    .search-box:hover {
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    }
+
+    .search-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 18px 24px;
+      font-size: 18px;
+    }
+
+    .search-btn {
+      border: none;
+      background: #ea4335;
+      color: white;
+      padding: 18px 30px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+
+    .search-btn:hover {
+      background: #d93025;
+    }
+
+    .footer {
+      margin-top: 25px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Replace logo.png with your generated logo filename -->
+    <img src="logo.png" alt="Search Logo" class="logo">
+
+    <form action="#">
+      <div class="search-box">
+        <input 
+          type="text" 
+          class="search-input" 
+          placeholder="Search the web..."
+        >
+
+        <button class="search-btn">
+          Search
+        </button>
+      </div>
+    </form>
+
+    <div class="footer">
+      Fictional Search Engine Mockup
+    </div>
+
+  </div>
+
+</body>
+</html>
